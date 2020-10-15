@@ -1,0 +1,13 @@
+﻿@model List<PluggedMVC.Core.Model.PersonViewModel>
+
+@{
+    ViewBag.Title = "List of Persons";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@foreach (var item in Model)
+{
+    @Html.DisplayFor(m=>item.FirstName)
+    <br />
+}
